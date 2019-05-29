@@ -23,7 +23,7 @@ class PigLatinizer
     new_arr=arr.collect do |item|
       individual(item)
     end
-    new_arr
+    new_arr.join(" ")
   end
 
 end
