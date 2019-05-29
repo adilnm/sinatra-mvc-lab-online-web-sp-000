@@ -19,8 +19,8 @@ class PigLatinizer
   end
 
   def eachWord(sentence)
-    new_sentence=sentence.split(" ")
-    new_sentence.each do |item|
+    arr=sentence.split(" ")
+    new_sentence.collect do |item|
       item=individual(item)
     end
     new_sentence
