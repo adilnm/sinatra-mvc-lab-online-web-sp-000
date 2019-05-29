@@ -13,8 +13,9 @@ class PigLatinizer
       while !new_word.first.match(/[aeoiu]/)
         new_word.push(new_word.first).shift
       end
+      new_word.push("ay").join('')
     end
-    new_word.push("ay").join('')
+    
   end
 
 end
