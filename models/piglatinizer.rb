@@ -1,6 +1,12 @@
 class PigLatinizer
 
-  
+  def piglatinize(input)
+    if input.split.size==1
+      individual(input)
+    else
+      eachWord(input)
+    end
+  end
   def individual(word)
     new_word=word.split('')
     if new_word.first.match(/[aeoiu]/i)
