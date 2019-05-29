@@ -20,7 +20,7 @@ class PigLatinizer
 
   def eachWord(sentence)
     arr=sentence.split(" ")
-    new_sentence.collect do |item|
+    new_arr=arr.collect do |item|
       item=individual(item)
     end
     new_sentence
