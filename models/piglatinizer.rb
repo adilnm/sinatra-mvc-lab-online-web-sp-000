@@ -9,8 +9,10 @@ class PigLatinizer
     new_word=word.split('')
     if new_word.first.match(/[aeoiu]/)
       new_word.push("way")
-    while !new_word.first.match(/[aeoiu]/)
-      new_word.push(new_word.first).shift
+    else
+      while !new_word.first.match(/[aeoiu]/)
+        new_word.push(new_word.first).shift
+      end
     end
     new_word.push("ay").join('')
   end
