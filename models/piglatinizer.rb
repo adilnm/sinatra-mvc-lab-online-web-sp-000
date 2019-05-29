@@ -18,4 +18,6 @@ class PigLatinizer
     new_word.join
   end
 
+  def eachWord(sentence)
+
 end
