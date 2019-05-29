@@ -15,7 +15,7 @@ class PigLatinizer
       end
       new_word.push("ay").join('')
     end
-    
+
   end
 
 end
