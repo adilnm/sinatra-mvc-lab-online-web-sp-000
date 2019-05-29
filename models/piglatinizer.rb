@@ -1,10 +1,6 @@
 class PigLatinizer
-  # attr_accessor :word
 
-  # def initialize (word)
-  #   @word=word
-  # end
-
+  
   def individual(word)
     new_word=word.split('')
     if new_word.first.match(/[aeoiu]/i)
