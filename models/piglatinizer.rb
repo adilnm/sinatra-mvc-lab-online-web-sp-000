@@ -5,7 +5,7 @@ class PigLatinizer
   #   @word=word
   # end
 
-  def piglatinize(word)
+  def individual(word)
     new_word=word.split('')
     if new_word.first.match(/[aeoiu]/i)
       new_word.push("way")
